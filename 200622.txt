@@ -1,0 +1,6 @@
+200622
+Objects - Mamiko
+collection of data, datas are ul (key & value = properties).
+using dot notation and squared bracket.
+
+
