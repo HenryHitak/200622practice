@@ -59,7 +59,9 @@
     myName.appendChild(myNameText);
     const divparent = document.getElementById("practice");
     const lastP = document.getElementById("secondP");
-    divparent.insertBefore(myName,lastP);
+    divparent.insertBefore(myName, practice.lastElementChild);
+    divparent.replaceChild(myName, practice.lastElementChild);
+    // divparent.removeChild(divparent.firstElementChild);//delete the first element child.
     // console.log(document.querySelector("p"));
     // console.log(document.querySelectorAll("p"));
     // console.log("p")[2].innerText = "Hey I'm JS"
