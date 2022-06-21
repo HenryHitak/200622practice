@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-    <div class="box" id="first">
+    <!-- <div class="box" id="first">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsa doloribus soluta nostrum. Dignissimos voluptatibus error amet veniam ex tempora soluta autem eligendi neque mollitia dolor vitae, nisi recusandae hic.
         </p>
@@ -31,11 +31,14 @@
         </p>
     </div>
     <button type="button" onclick="display();">Click bait!</button>
-    <div>
+    <div id="div1">
+        <h2 id="title">I'm just a title.</h2>
+    </div> -->
+    <div id="practice">
         <p>
             What a good day
         </p>
-        <p>
+        <p id="secondP">
             Really? 
         </p>
         <p>
@@ -44,30 +47,44 @@
     </div>
 </body>
 <script>
-    console.log(document.querySelector("p"));
-    console.log(document.querySelectorAll("p"));
+    // const p2 = document.createElement("p");
+    // const p2InnerText= document.createTextNode("I'm just some dummy text");
+    // p2.appendChild(p2InnerText);
+    // const h2 = document.querySelector("#div1>h2");
+    // const divparent = document.getElementById("div1");
+    // divparent.appendChild(p2);
+    // divparent.insertBefore(p2, h2);
+    const myName = document.createElement("h2");
+    const myNameText = document.createTextNode("Hitak Lee");
+    myName.appendChild(myNameText);
+    const divparent = document.getElementById("practice");
+    const lastP = document.getElementById("secondP");
+    divparent.insertBefore(myName,lastP);
+    // console.log(document.querySelector("p"));
+    // console.log(document.querySelectorAll("p"));
     // console.log("p")[2].innerText = "Hey I'm JS"
-    let node = document.querySelector("body div");
-    node.className="redish";
-    node.classList.add("box");
+    // let node = document.querySelector("body div");
+    // node.className="redish";
+    // node.classList.add("box");
     // node.classList.remove("redish");
-    node.classList.replace("redish", "blueish");
-    function display() {
-        node.classList.toggle("hide");
-    }
-    var text = document.createTextNode("this is dynamic");
-    var p = document.createElement("p");
-    var first = document.getElementById("first");
-    first.appendChild(p);
-    p.appendChild(text);
-    var firstName = document.createTextNode("Hitak");
-    var lastName = document.createTextNode("Lee");
-    var space = document.createTextNode(" ");
-    var h2 = document.createElement("h2");
-    var first = document.getElementById("first");
-    first.appendChild(h2);
-    h2.append(firstName,space, lastName);
+    // node.classList.replace("redish", "blueish");
+    // function display() {
+    //     node.classList.toggle("hide");
+    // }
+    // var text = document.createTextNode("this is dynamic");
+    // var p = document.createElement("p");
+    // var first = document.getElementById("first");
+    // first.appendChild(p);
+    // p.appendChild(text);
+    // var firstName = document.createTextNode("Hitak");
+    // var lastName = document.createTextNode("Lee");
+    // var space = document.createTextNode(" ");
+    // // var h2 = document.createElement("h2");
+    // var first = document.getElementById("first");
+    // first.appendChild(h2);
+    // h2.append(firstName,space, lastName);
     // h2.appendChild(lastName);
+
     console.log("node");
     // queryselectorall - Array
     // querySelector - line
